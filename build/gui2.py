@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"G:\ENT Project\export\build\build\assets\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"G:\ENT Project\export\build\build\assets\frame2")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -45,9 +45,9 @@ image_1 = canvas.create_image(
 
 canvas.create_rectangle(
     55.0,
-    148.0,
+    54.0,
     112.0,
-    205.0,
+    111.0,
     fill="#1E5C2A",
     outline="")
 
@@ -163,38 +163,6 @@ canvas.create_rectangle(
     fill="#FFFFFF",
     outline="")
 
-image_image_2 = PhotoImage(
-    file=relative_to_assets("image_2.png"))
-image_2 = canvas.create_image(
-    396.0,
-    717.0,
-    image=image_image_2
-)
-
-image_image_3 = PhotoImage(
-    file=relative_to_assets("image_3.png"))
-image_3 = canvas.create_image(
-    815.0,
-    279.0,
-    image=image_image_3
-)
-
-image_image_4 = PhotoImage(
-    file=relative_to_assets("image_4.png"))
-image_4 = canvas.create_image(
-    815.0,
-    717.0,
-    image=image_image_4
-)
-
-image_image_5 = PhotoImage(
-    file=relative_to_assets("image_5.png"))
-image_5 = canvas.create_image(
-    1234.0,
-    718.0,
-    image=image_image_5
-)
-
 button_image_7 = PhotoImage(
     file=relative_to_assets("button_7.png"))
 button_7 = Button(
@@ -211,6 +179,14 @@ button_7.place(
     height=35.0
 )
 
+image_image_2 = PhotoImage(
+    file=relative_to_assets("image_2.png"))
+image_2 = canvas.create_image(
+    821.0,
+    232.0,
+    image=image_image_2
+)
+
 button_image_8 = PhotoImage(
     file=relative_to_assets("button_8.png"))
 button_8 = Button(
@@ -221,96 +197,46 @@ button_8 = Button(
     relief="flat"
 )
 button_8.place(
-    x=256.0,
-    y=834.0,
-    width=280.0,
-    height=42.0
-)
-
-button_image_9 = PhotoImage(
-    file=relative_to_assets("button_9.png"))
-button_9 = Button(
-    image=button_image_9,
-    borderwidth=0,
-    highlightthickness=0,
-    command=lambda: print("button_9 clicked"),
-    relief="flat"
-)
-button_9.place(
-    x=675.0,
-    y=834.0,
-    width=280.0,
-    height=42.0
-)
-
-button_image_10 = PhotoImage(
-    file=relative_to_assets("button_10.png"))
-button_10 = Button(
-    image=button_image_10,
-    borderwidth=0,
-    highlightthickness=0,
-    command=lambda: print("button_10 clicked"),
-    relief="flat"
-)
-button_10.place(
-    x=1094.0,
-    y=835.0,
-    width=280.0,
+    x=743.5,
+    y=330.5,
+    width=136.0,
     height=42.0
 )
 
 canvas.create_text(
-    225.0,
-    753.0,
+    234.0,
+    147.7730712890625,
     anchor="nw",
-    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis tempus tellus adipiscing eget non arcu egestas elementum faucibus. Senectus cras nunc et, ",
+    text="Subhead",
     fill="#9E9E9E",
-    font=("Nunito SemiBold", 14 * -1)
+    font=("Nunito Regular", 14 * -1)
 )
 
 canvas.create_text(
-    225.0,
-    705.0,
+    1258.0,
+    103.7730712890625,
     anchor="nw",
-    text="Diagnosa Telinga",
-    fill="#404040",
-    font=("Nunito Bold", 19 * -1)
-)
-
-canvas.create_text(
-    644.0,
-    705.0,
-    anchor="nw",
-    text="Diagnosa Hidung",
-    fill="#404040",
-    font=("Nunito Bold", 19 * -1)
-)
-
-canvas.create_text(
-    644.0,
-    753.0,
-    anchor="nw",
-    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis tempus tellus adipiscing eget non arcu egestas elementum faucibus. Senectus cras nunc et, ",
+    text="Selasa, 16 April 2024",
     fill="#9E9E9E",
-    font=("Nunito SemiBold", 14 * -1)
+    font=("Nunito Regular", 14 * -1)
 )
 
 canvas.create_text(
-    1063.0,
-    754.0,
+    234.0,
+    103.7730712890625,
     anchor="nw",
-    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis tempus tellus adipiscing eget non arcu egestas elementum faucibus. Senectus cras nunc et, ",
-    fill="#9E9E9E",
-    font=("Nunito SemiBold", 14 * -1)
-)
-
-canvas.create_text(
-    1063.0,
-    706.0,
-    anchor="nw",
-    text="Diagnosa Tenggorokan",
+    text="Weekly Maintenance",
     fill="#404040",
-    font=("Nunito Bold", 19 * -1)
+    font=("Nunito Bold", 24 * -1)
+)
+
+canvas.create_text(
+    233.5,
+    175.7730712890625,
+    anchor="nw",
+    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis tempus tellus adipiscing eget non arcu egestas elementum faucibus. Senectus cras nunc et, arcu ultricies tristique. Mi purus ut eget euismod orci, odio eu, non. Massa sapien magna volutpat lorem. Aliquet amet elit sed ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis tempus tellus adipiscing eget non arcu egestas elementum faucibus. Senectus cras nunc et, arcu ultricies tristique. Mi purus ut eget euismod orci, odio eu, non. Massa sapien magna volutpat lorem. Aliquet amet elit sed ac. \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis tempus tellus adipiscing eget non arcu egestas elementum faucibus. Senectus cras nunc et, arcu ultricies tristique. Mi purus ut eget euismod orci, odio eu, non. Massa sapien magna volutpat lorem. Aliquet amet elit sed ac. ",
+    fill="#404040",
+    font=("Nunito SemiBold", 14 * -1)
 )
 window.resizable(False, False)
 window.mainloop()
