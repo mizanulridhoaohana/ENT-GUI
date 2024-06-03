@@ -263,7 +263,7 @@ canvas.create_text(
     225.0,
     753.0,
     anchor="nw",
-    text="Lorem ipsum dolor sit amet, consectetur \nadipiscing elit. Iaculis tempus tellus adipiscing eget non \narcu egestas elementum faucibus. Senectus cras nunc et, ",
+    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis tempus tellus adipiscing eget non arcu egestas elementum faucibus. Senectus cras nunc et, ",
     fill="#9E9E9E",
     font=("Nunito SemiBold", 14 * -1)
 )
@@ -290,7 +290,7 @@ canvas.create_text(
     644.0,
     753.0,
     anchor="nw",
-    text="Lorem ipsum dolor sit amet, consectetur\nadipiscing elit. Iaculis tempus tellus adipiscing eget non \narcu egestas elementum faucibus. Senectus cras nunc et, ",
+    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis tempus tellus adipiscing eget non arcu egestas elementum faucibus. Senectus cras nunc et, ",
     fill="#9E9E9E",
     font=("Nunito SemiBold", 14 * -1)
 )
@@ -299,7 +299,7 @@ canvas.create_text(
     1063.0,
     754.0,
     anchor="nw",
-    text="Lorem ipsum dolor sit amet, consectetur \nadipiscing elit. Iaculis tempus tellus adipiscing eget non \narcu egestas elementum faucibus. Senectus cras nunc et, ",
+    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis tempus tellus adipiscing eget non arcu egestas elementum faucibus. Senectus cras nunc et, ",
     fill="#9E9E9E",
     font=("Nunito SemiBold", 14 * -1)
 )
@@ -312,5 +312,5 @@ canvas.create_text(
     fill="#404040",
     font=("Nunito Bold", 19 * -1)
 )
-window.resizable(False, False)
+window.resizable(True, True)
 window.mainloop()
