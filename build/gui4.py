@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"G:\ENT Project\export\build\assets\frame0")
+ASSETS_PATH = OUTPUT_PATH / Path(r"G:\ENT Project\export\build\assets\frame4")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -38,16 +38,16 @@ canvas.place(x = 0, y = 0)
 image_image_1 = PhotoImage(
     file=relative_to_assets("image_1.png"))
 image_1 = canvas.create_image(
-    84.0,
-    491.0,
+    820.0,
+    490.0,
     image=image_image_1
 )
 
 image_image_2 = PhotoImage(
     file=relative_to_assets("image_2.png"))
 image_2 = canvas.create_image(
-    78.0,
-    176.0,
+    806.0,
+    398.0,
     image=image_image_2
 )
 
@@ -61,10 +61,10 @@ button_1 = Button(
     relief="flat"
 )
 button_1.place(
-    x=62.0,
-    y=236.0,
-    width=34.0,
-    height=34.0
+    x=667.5,
+    y=828.0,
+    width=136.0,
+    height=42.0
 )
 
 button_image_2 = PhotoImage(
@@ -77,10 +77,43 @@ button_2 = Button(
     relief="flat"
 )
 button_2.place(
-    x=62.0,
-    y=159.0,
-    width=35.0,
-    height=35.0
+    x=811.5,
+    y=828.0,
+    width=136.0,
+    height=42.0
+)
+
+canvas.create_text(
+    234.0,
+    736.0,
+    anchor="nw",
+    text="Diagnosa Telinga",
+    fill="#404040",
+    font=("Nunito Bold", 24 * -1)
+)
+
+image_image_3 = PhotoImage(
+    file=relative_to_assets("image_3.png"))
+image_3 = canvas.create_image(
+    1324.0,
+    647.0,
+    image=image_image_3
+)
+
+image_image_4 = PhotoImage(
+    file=relative_to_assets("image_4.png"))
+image_4 = canvas.create_image(
+    84.0,
+    491.0,
+    image=image_image_4
+)
+
+image_image_5 = PhotoImage(
+    file=relative_to_assets("image_5.png"))
+image_5 = canvas.create_image(
+    78.0,
+    176.0,
+    image=image_image_5
 )
 
 button_image_3 = PhotoImage(
@@ -93,10 +126,10 @@ button_3 = Button(
     relief="flat"
 )
 button_3.place(
-    x=61.0,
-    y=806.0,
-    width=35.0,
-    height=35.0
+    x=62.0,
+    y=236.0,
+    width=34.0,
+    height=34.0
 )
 
 button_image_4 = PhotoImage(
@@ -109,10 +142,10 @@ button_4 = Button(
     relief="flat"
 )
 button_4.place(
-    x=64.0,
-    y=68.0,
-    width=28.0,
-    height=28.0
+    x=62.0,
+    y=159.0,
+    width=35.0,
+    height=35.0
 )
 
 button_image_5 = PhotoImage(
@@ -125,10 +158,10 @@ button_5 = Button(
     relief="flat"
 )
 button_5.place(
-    x=64.0,
-    y=884.0,
-    width=28.0,
-    height=28.0
+    x=61.0,
+    y=806.0,
+    width=35.0,
+    height=35.0
 )
 
 button_image_6 = PhotoImage(
@@ -141,6 +174,38 @@ button_6 = Button(
     relief="flat"
 )
 button_6.place(
+    x=64.0,
+    y=68.0,
+    width=28.0,
+    height=28.0
+)
+
+button_image_7 = PhotoImage(
+    file=relative_to_assets("button_7.png"))
+button_7 = Button(
+    image=button_image_7,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_7 clicked"),
+    relief="flat"
+)
+button_7.place(
+    x=64.0,
+    y=884.0,
+    width=28.0,
+    height=28.0
+)
+
+button_image_8 = PhotoImage(
+    file=relative_to_assets("button_8.png"))
+button_8 = Button(
+    image=button_image_8,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_8 clicked"),
+    relief="flat"
+)
+button_8.place(
     x=60.0,
     y=309.0,
     width=38.0,
@@ -163,70 +228,6 @@ canvas.create_rectangle(
     fill="#FFFFFF",
     outline="")
 
-image_image_3 = PhotoImage(
-    file=relative_to_assets("image_3.png"))
-image_3 = canvas.create_image(
-    396.0,
-    717.0,
-    image=image_image_3
-)
-
-image_image_4 = PhotoImage(
-    file=relative_to_assets("image_4.png"))
-image_4 = canvas.create_image(
-    815.0,
-    279.0,
-    image=image_image_4
-)
-
-image_image_5 = PhotoImage(
-    file=relative_to_assets("image_5.png"))
-image_5 = canvas.create_image(
-    815.0,
-    717.0,
-    image=image_image_5
-)
-
-image_image_6 = PhotoImage(
-    file=relative_to_assets("image_6.png"))
-image_6 = canvas.create_image(
-    1234.0,
-    718.0,
-    image=image_image_6
-)
-
-button_image_7 = PhotoImage(
-    file=relative_to_assets("button_7.png"))
-button_7 = Button(
-    image=button_image_7,
-    borderwidth=0,
-    highlightthickness=0,
-    command=lambda: print("button_7 clicked"),
-    relief="flat"
-)
-button_7.place(
-    x=61.0,
-    y=745.0,
-    width=35.0,
-    height=35.0
-)
-
-button_image_8 = PhotoImage(
-    file=relative_to_assets("button_8.png"))
-button_8 = Button(
-    image=button_image_8,
-    borderwidth=0,
-    highlightthickness=0,
-    command=lambda: print("button_8 clicked"),
-    relief="flat"
-)
-button_8.place(
-    x=243.0,
-    y=834.0,
-    width=280.0,
-    height=42.0
-)
-
 button_image_9 = PhotoImage(
     file=relative_to_assets("button_9.png"))
 button_9 = Button(
@@ -237,10 +238,19 @@ button_9 = Button(
     relief="flat"
 )
 button_9.place(
-    x=662.0,
-    y=834.0,
-    width=280.0,
-    height=42.0
+    x=61.0,
+    y=745.0,
+    width=35.0,
+    height=35.0
+)
+
+canvas.create_text(
+    234.0,
+    784.0,
+    anchor="nw",
+    text="Sebelum mengambil gambar silakan ambil Otoscope dan pastikan sudah diarahkan dengan benar.",
+    fill="#14181F",
+    font=("Nunito Regular", 14 * -1)
 )
 
 button_image_10 = PhotoImage(
@@ -253,64 +263,10 @@ button_10 = Button(
     relief="flat"
 )
 button_10.place(
-    x=1081.0,
-    y=835.0,
-    width=280.0,
+    x=1304.0,
+    y=625.0,
+    width=42.0,
     height=42.0
-)
-
-canvas.create_text(
-    225.0,
-    753.0,
-    anchor="nw",
-    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis tempus tellus adipiscing eget non arcu egestas elementum faucibus. Senectus cras nunc et, ",
-    fill="#9E9E9E",
-    font=("Nunito SemiBold", 14 * -1)
-)
-
-canvas.create_text(
-    225.0,
-    705.0,
-    anchor="nw",
-    text="Diagnosa Telinga",
-    fill="#404040",
-    font=("Nunito Bold", 19 * -1)
-)
-
-canvas.create_text(
-    644.0,
-    705.0,
-    anchor="nw",
-    text="Diagnosa Hidung",
-    fill="#404040",
-    font=("Nunito Bold", 19 * -1)
-)
-
-canvas.create_text(
-    644.0,
-    753.0,
-    anchor="nw",
-    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis tempus tellus adipiscing eget non arcu egestas elementum faucibus. Senectus cras nunc et, ",
-    fill="#9E9E9E",
-    font=("Nunito SemiBold", 14 * -1)
-)
-
-canvas.create_text(
-    1063.0,
-    754.0,
-    anchor="nw",
-    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iaculis tempus tellus adipiscing eget non arcu egestas elementum faucibus. Senectus cras nunc et, ",
-    fill="#9E9E9E",
-    font=("Nunito SemiBold", 14 * -1)
-)
-
-canvas.create_text(
-    1063.0,
-    706.0,
-    anchor="nw",
-    text="Diagnosa Tenggorokan",
-    fill="#404040",
-    font=("Nunito Bold", 19 * -1)
 )
 window.resizable(False, False)
 window.mainloop()
