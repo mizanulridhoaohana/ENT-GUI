@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"G:\ENT Project\export\v2\build\assets\frame1")
+ASSETS_PATH = OUTPUT_PATH / Path(r"G:\ENT Project\export\v2\build\assets\frame4")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -38,41 +38,34 @@ canvas.place(x = 0, y = 0)
 image_image_1 = PhotoImage(
     file=relative_to_assets("image_1.png"))
 image_1 = canvas.create_image(
-    511.0,
-    454.0,
+    789.0,
+    491.0,
     image=image_image_1
 )
 
 image_image_2 = PhotoImage(
     file=relative_to_assets("image_2.png"))
 image_2 = canvas.create_image(
-    1197.0,
-    337.0,
+    779.0,
+    463.5,
     image=image_image_2
+)
+
+canvas.create_text(
+    172.0,
+    866.0,
+    anchor="nw",
+    text="Gambar Fullscreen",
+    fill="#404040",
+    font=("Nunito Bold", 24 * -1)
 )
 
 image_image_3 = PhotoImage(
     file=relative_to_assets("image_3.png"))
 image_3 = canvas.create_image(
-    1197.0,
-    755.0,
+    70.99998474121094,
+    490.9999945797865,
     image=image_image_3
-)
-
-image_image_4 = PhotoImage(
-    file=relative_to_assets("image_4.png"))
-image_4 = canvas.create_image(
-    740.9999972898933,
-    919.9999843513231,
-    image=image_image_4
-)
-
-image_image_5 = PhotoImage(
-    file=relative_to_assets("image_5.png"))
-image_5 = canvas.create_image(
-    821.0,
-    919.0,
-    image=image_image_5
 )
 
 button_image_1 = PhotoImage(
@@ -85,8 +78,8 @@ button_1 = Button(
     relief="flat"
 )
 button_1.place(
-    x=725.0,
-    y=896.0,
+    x=49.0,
+    y=467.0,
     width=46.0,
     height=46.0
 )
@@ -101,10 +94,10 @@ button_2 = Button(
     relief="flat"
 )
 button_2.place(
-    x=653.0,
-    y=902.0,
-    width=35.0,
-    height=35.0
+    x=53.99999847010076,
+    y=400.99999847010145,
+    width=35.00000152989924,
+    height=35.00000152989858
 )
 
 button_image_3 = PhotoImage(
@@ -117,8 +110,8 @@ button_3 = Button(
     relief="flat"
 )
 button_3.place(
-    x=873.0,
-    y=906.0,
+    x=57.0,
+    y=618.0,
     width=28.0,
     height=28.0
 )
@@ -133,10 +126,18 @@ button_4 = Button(
     relief="flat"
 )
 button_4.place(
-    x=588.0,
-    y=905.0,
+    x=58.0,
+    y=342.0,
     width=28.0,
     height=28.0
+)
+
+image_image_4 = PhotoImage(
+    file=relative_to_assets("image_4.png"))
+image_4 = canvas.create_image(
+    70.99999812041096,
+    561.9999981204103,
+    image=image_image_4
 )
 
 button_image_5 = PhotoImage(
@@ -149,8 +150,8 @@ button_5 = Button(
     relief="flat"
 )
 button_5.place(
-    x=808.0,
-    y=905.0,
+    x=58.0,
+    y=549.0,
     width=28.0,
     height=28.0
 )

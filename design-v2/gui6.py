@@ -11,7 +11,7 @@ from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"G:\ENT Project\export\v2\build\assets\frame1")
+ASSETS_PATH = OUTPUT_PATH / Path(r"G:\ENT Project\export\v2\build\assets\frame6")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -20,7 +20,7 @@ def relative_to_assets(path: str) -> Path:
 
 window = Tk()
 
-window.geometry("1512x982")
+window.geometry("1495x982")
 window.configure(bg = "#85C13D")
 
 
@@ -28,7 +28,7 @@ canvas = Canvas(
     window,
     bg = "#85C13D",
     height = 982,
-    width = 1512,
+    width = 1495,
     bd = 0,
     highlightthickness = 0,
     relief = "ridge"
@@ -38,41 +38,42 @@ canvas.place(x = 0, y = 0)
 image_image_1 = PhotoImage(
     file=relative_to_assets("image_1.png"))
 image_1 = canvas.create_image(
-    511.0,
-    454.0,
+    1418.2763671875,
+    32.8797607421875,
     image=image_image_1
 )
 
 image_image_2 = PhotoImage(
     file=relative_to_assets("image_2.png"))
 image_2 = canvas.create_image(
-    1197.0,
-    337.0,
+    1374.1884765625,
+    31.87451171875,
     image=image_image_2
+)
+
+canvas.create_text(
+    27.7095947265625,
+    18.2392578125,
+    anchor="nw",
+    text="9:41",
+    fill="#FFFFFF",
+    font=("Nunito Bold", 19 * -1)
 )
 
 image_image_3 = PhotoImage(
     file=relative_to_assets("image_3.png"))
 image_3 = canvas.create_image(
-    1197.0,
-    755.0,
+    747.0,
+    100.0,
     image=image_image_3
 )
 
 image_image_4 = PhotoImage(
     file=relative_to_assets("image_4.png"))
 image_4 = canvas.create_image(
-    740.9999972898933,
-    919.9999843513231,
+    279.0,
+    515.0,
     image=image_image_4
-)
-
-image_image_5 = PhotoImage(
-    file=relative_to_assets("image_5.png"))
-image_5 = canvas.create_image(
-    821.0,
-    919.0,
-    image=image_image_5
 )
 
 button_image_1 = PhotoImage(
@@ -85,10 +86,27 @@ button_1 = Button(
     relief="flat"
 )
 button_1.place(
-    x=725.0,
-    y=896.0,
-    width=46.0,
-    height=46.0
+    x=97.5,
+    y=379.0,
+    width=364.0,
+    height=316.0
+)
+
+canvas.create_text(
+    88.0,
+    333.0,
+    anchor="nw",
+    text="Telinga",
+    fill="#404040",
+    font=("Nunito Bold", 25 * -1)
+)
+
+image_image_5 = PhotoImage(
+    file=relative_to_assets("image_5.png"))
+image_5 = canvas.create_image(
+    744.0,
+    515.0,
+    image=image_image_5
 )
 
 button_image_2 = PhotoImage(
@@ -101,10 +119,60 @@ button_2 = Button(
     relief="flat"
 )
 button_2.place(
-    x=653.0,
-    y=902.0,
-    width=35.0,
-    height=35.0
+    x=562.5,
+    y=379.0,
+    width=364.0,
+    height=316.0
+)
+
+canvas.create_text(
+    555.0,
+    333.0,
+    anchor="nw",
+    text="Tenggorokan",
+    fill="#404040",
+    font=("Nunito Bold", 25 * -1)
+)
+
+image_image_6 = PhotoImage(
+    file=relative_to_assets("image_6.png"))
+image_6 = canvas.create_image(
+    1210.0,
+    515.0,
+    image=image_image_6
+)
+
+image_image_7 = PhotoImage(
+    file=relative_to_assets("image_7.png"))
+image_7 = canvas.create_image(
+    1210.5,
+    537.0,
+    image=image_image_7
+)
+
+canvas.create_text(
+    1019.0,
+    333.0,
+    anchor="nw",
+    text="Hidung",
+    fill="#404040",
+    font=("Nunito Bold", 25 * -1)
+)
+
+image_image_8 = PhotoImage(
+    file=relative_to_assets("image_8.png"))
+image_8 = canvas.create_image(
+    740.9999972898931,
+    919.9999843513231,
+    image=image_image_8
+)
+
+image_image_9 = PhotoImage(
+    file=relative_to_assets("image_9.png"))
+image_9 = canvas.create_image(
+    821.0,
+    919.0,
+    image=image_image_9
 )
 
 button_image_3 = PhotoImage(
@@ -117,10 +185,10 @@ button_3 = Button(
     relief="flat"
 )
 button_3.place(
-    x=873.0,
-    y=906.0,
-    width=28.0,
-    height=28.0
+    x=725.0,
+    y=896.0,
+    width=46.0,
+    height=46.0
 )
 
 button_image_4 = PhotoImage(
@@ -133,10 +201,10 @@ button_4 = Button(
     relief="flat"
 )
 button_4.place(
-    x=588.0,
-    y=905.0,
-    width=28.0,
-    height=28.0
+    x=653.0,
+    y=902.0,
+    width=35.0,
+    height=35.0
 )
 
 button_image_5 = PhotoImage(
@@ -149,6 +217,38 @@ button_5 = Button(
     relief="flat"
 )
 button_5.place(
+    x=873.0,
+    y=906.0,
+    width=28.0,
+    height=28.0
+)
+
+button_image_6 = PhotoImage(
+    file=relative_to_assets("button_6.png"))
+button_6 = Button(
+    image=button_image_6,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_6 clicked"),
+    relief="flat"
+)
+button_6.place(
+    x=588.0,
+    y=905.0,
+    width=28.0,
+    height=28.0
+)
+
+button_image_7 = PhotoImage(
+    file=relative_to_assets("button_7.png"))
+button_7 = Button(
+    image=button_image_7,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_7 clicked"),
+    relief="flat"
+)
+button_7.place(
     x=808.0,
     y=905.0,
     width=28.0,
